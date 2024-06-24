@@ -1,0 +1,19 @@
+# environment/computational parameters
+seed: 32678456782       # random number generator seed (long integer value)
+device: cuda
+num_workers: 4
+
+# dataset parameters
+data_root: datasets/anuraset_v3/anurasetv3
+num_classes: 42
+folder_name: mobilenetv3_large_4sites/
+# training hyperparameters
+image_size: [224, 224] 
+num_epochs: 10
+batch_size: 32  
+learning_rate: 0.001 
+weight_decay: 0.0001 
+optimizer: Adam 
+model_type: mobilenet_v3_large
+pretrained: true
+multilabel: true
